@@ -1,0 +1,18 @@
+body {font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;margin:0;padding:0;background:linear-gradient(to right,#f2f2f2,#e6e6e6);}
+.container {max-width:1000px;margin:auto;padding:20px;}
+h1{text-align:center;color:#333;font-size:32px;margin-bottom:5px;}
+p.desc{text-align:center;color:#555;font-size:16px;margin-bottom:30px;}
+.tab{display:flex;flex-wrap:wrap;justify-content:center;margin-bottom:20px;}
+.tab button{background:#fff;border:2px solid #007BFF;color:#007BFF;cursor:pointer;padding:12px 20px;font-size:16px;border-radius:10px 10px 0 0;margin:2px;transition:0.3s;}
+.tab button.active{background:#007BFF;color:#fff;}
+.tabcontent{display:none;animation:fadeIn 0.5s;}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+.card{background:#fff;padding:20px;border-radius:15px;box-shadow:0 4px 20px rgba(0,0,0,0.1);margin-bottom:20px;}
+.card h2{color:#007BFF;font-size:22px;margin-bottom:10px;}
+.card input[type=file]{width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin-top:10px;}
+.convert-btn{background:linear-gradient(to right,#28a745,#218838);color:#fff;border:none;padding:12px 25px;margin-top:15px;border-radius:10px;font-size:16px;cursor:pointer;transition:0.3s;}
+.convert-btn:hover{transform:scale(1.05);}
+.status{font-size:14px;margin-top:10px;padding:10px;border-radius:8px;display:none;}
+.status.success{background:#d4edda;color:#155724;}
+.status.error{background:#f8d7da;color:#721c24;}
+@media(max-width:600px){.tab{flex-direction:column;}.convert-btn{width:100%;text-align:center;}}
